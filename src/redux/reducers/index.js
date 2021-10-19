@@ -4,7 +4,7 @@ import { product_Reducer } from "./product_Reducer";
 
 
  const Reducer = combineReducers({
-    allProducts:product_Reducer,
-})
+   allProducts:product_Reducer
+ })
 
 export default Reducer;
