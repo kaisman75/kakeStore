@@ -1,31 +1,28 @@
 
-import React,{useEffect} from 'react'
-import {useSelector,useDispatch}from 'react-redux';
+import React from 'react'
 import axios from 'axios';
-import{useParams}from 'react-router-dom';
-import {selected_Product} from '../redux/actions/productAction'
+import{ useParams }from 'react-router-dom';
+
 
 
 
 
 function ProductDetails() {
   
-    const { productId } = useParams();
-    console.log(productId);
+     const {productId}= useParams();
+     console.log(productId);
 
-   
-    
     
     return (
-        <div  className='ui container center'>
+        <div className="container">
         <br/>
         <br/>
         <br/>
         <br/>
         <br/>
 
-       
-           selected_Product
+     
+          
         </div>
     )
 }

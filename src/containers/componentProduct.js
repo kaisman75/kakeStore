@@ -8,7 +8,7 @@ function ComponentProduct() {
     const { id, title, category, image, price } = products;
     return (
       <div className=" wide" key={id}>
-        <Link to={`"/details/${id}`}>
+        <Link to={`/details/${id}`}>
         <div className=" cards">
           <div className="card">
             <img src={image} alt={title} />

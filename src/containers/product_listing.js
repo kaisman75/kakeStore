@@ -7,6 +7,7 @@ import ProductDetails from './product_details';
 
 
 
+
 function ProductListing() {
   const products = useSelector((state) => state.allProducts.products);
   const dispatch = useDispatch()
@@ -17,7 +18,7 @@ function ProductListing() {
       .catch((err) => {
         console.log("Err:", err)
       }  )
-    
+    console.log(response.data)
     dispatch(set_Products((response.data)))
 
   }
@@ -34,7 +35,7 @@ function ProductListing() {
   return (
     <div className="container">
       <ComponentProduct />
-      
+      <ProductDetails/>
     </div>
   )
 }
