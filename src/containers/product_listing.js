@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import axios from 'axios';
 import ComponentProduct from './componentProduct';
 import { set_Products } from '../redux/actions/productAction';
-import ProductDetails from './product_details';
+
 
 
 
@@ -18,7 +18,7 @@ function ProductListing() {
       .catch((err) => {
         console.log("Err:", err)
       }  )
-    console.log(response.data)
+  
     dispatch(set_Products((response.data)))
 
   }
@@ -33,9 +33,9 @@ function ProductListing() {
   
   
   return (
-    <div className="container">
+    <div className="ui grid container">
       <ComponentProduct />
-      <ProductDetails/>
+
     </div>
   )
 }

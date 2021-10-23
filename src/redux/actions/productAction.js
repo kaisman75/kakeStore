@@ -6,13 +6,13 @@ export const set_Products=(products)=>{
         payload:products,
     }
 }
-export const selected_Product=(product)=>{
+export const selectedProduct=(product)=>{
     return  {
          type:actionTypes.SELECTED_PRODUCT,
          payload:product,
      }
  }
- export const remove_selected_Product=(product)=>{
+ export const removeSelectedProduct=(product)=>{
     return  {
          type:actionTypes.REMOVE_SELECTED_PRODUCT,
          payload:product,

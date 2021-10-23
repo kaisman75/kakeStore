@@ -2,9 +2,11 @@ import React from 'react'
 
 function Header() {
     return (
-            <div  className='header container'>
-                <h2>ManaiStore</h2>
-            </div>
+        <div className="ui fixed menu">
+        <div className="ui container center">
+          <h2>manaiShop</h2>
+        </div>
+      </div>
   
     )
 }

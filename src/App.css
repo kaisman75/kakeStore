@@ -9,58 +9,91 @@
   align-items: flex-start;
   flex-wrap: nowrap;
 }
-.header.container {
-  background-color: #d8dedeb5;
-  text-align: left;
-  position: fixed;
-  width: 100vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  /* left: 10px; */
-  align-items: center;
-  z-index: 1;
-}
-.ui.fixed.menu {
-  position: fixed;
-  padding: 18px;
-}
-.container {
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.wide {
- margin: 30px;
-  width: 20%;
-  height: 50vh;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-}
-.cards {
+.ui.cards > .card > .image {
+  height: 250px;
   padding: 20px;
+  background: #fff;
+  margin: auto;
+}
+.ui.cards > .card > .image > img {
   height: 100%;
-  width:100%;
-  cursor: pointer;
+  max-width: 100%;
+  width: auto;
+}
+.ui.cards > .card > .content > .header {
+  height: 48px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.ui.cards > .card > .content > .description {
+  height: 36px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+.ui.cards > .card .meta.price {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
 }
 
-.card {
-  height:100%;
-  width: 100%;
-  padding: 20px;
+.ui.cards > .card .meta.price > a {
+  font-size: 1.3rem;
+  color: #222;
 }
 
-.card:hover{
- 
-  padding: 0px;
+.ui.menu.fixed {
+  height: 60px;
+  padding-top: 15px;
 }
 
-img {
+.ui.grid.container {
+  margin-top: 45px;
+}
 
-  height: 60%;
-  width: 80%;
-  margin: 10px;
+.ui.grid > .row {
+  background: #fff;
+}
+.ui.grid > .row > .column.lp {
+  padding: 20px 40px 20px 20px;
+  align-self: flex-start !important;
+}
+.ui.grid > .row > .column.rp {
+  padding: 20px 20px 20px 40px;
+  text-align: left;
+  align-self: flex-start !important;
+}
+
+.ui.grid > .row > .column > img,
+.ui.grid > .row > img {
+  height: 100%;
+}
+.ui.placeholder .header:not(:first-child):before,
+.ui.placeholder .image:not(:first-child):before,
+.ui.placeholder .paragraph:not(:first-child):before {
+  display: none;
+}
+
+.ui.label,
+.ui.labels .label {
+  font-size: 22px;
+}
+
+.column.rp h1 {
+  color: #333;
+}
+.column.rp p {
+  font-size: 18px;
+  color: #777;
+}
+.ui.placeholder.segment .column .button,
+.ui.placeholder.segment .column .field,
+.ui.placeholder.segment .column textarea,
+.ui.placeholder.segment .column > .ui.input {
+  background-color: #ff3e6c;
+  border: 1px solid #ff3e6c;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 0;
 }
